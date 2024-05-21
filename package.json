@@ -1,0 +1,28 @@
+{
+  "name": "@edyspider/validate-nif",
+  "version": "1.0.0",
+  "description": "A package to validate Portuguese fiscal identification numbers (NIF)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edyspider/validate-nif.git"
+  },
+  "keywords": [
+    "NIF",
+    "VAT",
+    "Validate",
+    "Portugal"
+  ],
+  "author": "EdySpider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edyspider/validate-nif/issues"
+  },
+  "homepage": "https://github.com/edyspider/validate-nif#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
