@@ -7,7 +7,7 @@ A simple npm package to validate Portuguese fiscal identification numbers (NIF).
 ## Installation
 
 ```sh
-npm @edyspider/validate-nif
+npm i @edyspider/validate-nif
 ```
 
 ## Known Issues
