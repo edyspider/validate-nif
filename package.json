@@ -1,6 +1,6 @@
 {
   "name": "@edyspider/validate-nif",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package to validate Portuguese fiscal identification numbers (NIF)",
   "main": "index.js",
   "scripts": {

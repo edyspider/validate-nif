@@ -21,3 +21,9 @@ will be documented in this file.
 
 - Add ChangeLog
 - Update documentation
+
+## [1.0.3]
+
+### Minor Changes
+
+- Add code validation
