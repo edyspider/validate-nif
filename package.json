@@ -10,7 +10,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "lint": "eslint src/**/*.js test/**/*.js",
+    "lint": "eslint .",
     "build": "webpack --mode production",
     "test": "jest",
     "coverage": "jest --coverage"

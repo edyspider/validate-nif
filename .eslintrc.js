@@ -11,6 +11,7 @@ module.exports = {
     },
     rules: {
       // Add custom rules here
+      //"@typescript-eslint/no-unused-vars": "off"
     },
     ignorePatterns: ['dist/', 'node_modules/', 'coverage/'],
   };
