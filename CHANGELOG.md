@@ -27,3 +27,9 @@ will be documented in this file.
 ### Minor Changes
 
 - Add code validation
+
+## [1.0.4]
+
+### Minor Changes
+
+- Add code validation
