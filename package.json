@@ -10,7 +10,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint src/**/*.js test/**/*.js",
     "build": "webpack --mode production",
     "test": "jest",
     "coverage": "jest --coverage"
@@ -41,8 +41,5 @@
     "jest": "^29.7.0",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
-  },
-  "engines": {
-    "node": ">=14.0.0"
   }
 }
