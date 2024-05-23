@@ -4,6 +4,7 @@
   "description": "A package to validate Portuguese fiscal identification numbers (NIF)",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint.js",
     "test": "jest"
   },
   "repository": {
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/edyspider/validate-nif#readme",
   "devDependencies": {
+    "eslint": "^9.3.0",
     "jest": "^29.7.0"
   }
 }
