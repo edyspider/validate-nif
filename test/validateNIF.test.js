@@ -1,4 +1,4 @@
-const validateNIF = require('../index');
+const validateNIF = require('../src/index');
 
 test('valid NIF numbers', () => {
     expect(validateNIF('123456789')).toBe(true);
