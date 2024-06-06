@@ -1,6 +1,6 @@
-const validateNIF = require('../src/index');
+const { validateNIF, randomNIF } = require('../src/index');
 
-test('valid NIF numbers', () => {
+test('Valid NIF numbers', () => {
     expect(validateNIF('123456789')).toBe(true);
     expect(validateNIF('264586522')).toBe(true); // Singular Person
     expect(validateNIF('314822690')).toBe(true); // Singular Person New
@@ -10,7 +10,7 @@ test('valid NIF numbers', () => {
     expect(validateNIF('907309399')).toBe(true); // Irregular
 });
 
-test('invalid NIF numbers', () => {
+test('Invalid NIF numbers', () => {
     expect(validateNIF('999999999')).toBe(false);  // invalid
     expect(validateNIF('12345678')).toBe(false);  // too short
     expect(validateNIF('1234567890')).toBe(false);  // too long
@@ -19,10 +19,17 @@ test('invalid NIF numbers', () => {
     expect(validateNIF('332529011')).toBe(false);  // invalid end
 });
 
-test('invalid input types', () => {
+test('Invalid input types', () => {
     expect(validateNIF('abcdefghi')).toBe(false);  // letter instead of numbers
     expect(validateNIF(123456789)).toBe(false);  // number instead of string
     expect(validateNIF(null)).toBe(false); // null value
     expect(validateNIF('')).toBe(false); // empty value
     expect(validateNIF(undefined)).toBe(false); // undefined value
+});
+
+test('Valid Random NIF numbers', () => {
+    for (let i = 0; i < 10; i++) {
+        const nif = randomNIF();
+        expect(validateNIF(nif)).toBe(true);
+    }
 });
