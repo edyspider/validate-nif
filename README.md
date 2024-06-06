@@ -13,13 +13,16 @@ npm i @edyspider/validate-nif
 ## Usage
 
 ```js
-const validateNIF = require('@edyspider/validate-nif');
+const { validateNIF, randomNIF } = require('@edyspider/validate-nif');
 
 const validNIF = '123456789';
 const invalidNIF = '999999999';
+const randNIF = randomNIF();
 
 console.log(`Is ${validNIF} a valid NIF?`, validateNIF(validNIF));
 console.log(`Is ${invalidNIF} a valid NIF?`, validateNIF(invalidNIF));
+console.log(`Generated random NIF: ${randNIF}`);
+console.log(`Is generated NIF valid?`, validateNIF(randNIF));
 ```
 
 ```sh
