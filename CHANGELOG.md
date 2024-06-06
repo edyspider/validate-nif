@@ -3,17 +3,29 @@
 All notable changes to the **@edyspider/validate-nif** npm package
 will be documented in this file.
 
-## [1.0.0]
+## [1.7.1]
 
-### New features
+### Changes
 
-- Initial release
+- Add new function to generate random valid NIF numbers
 
-## [1.0.1]
+---
+
+## [1.0.4]
 
 ### Minor Changes
 
-- Update documentation
+- Add code validation
+
+---
+
+## [1.0.3]
+
+### Minor Changes
+
+- Add code validation
+
+---
 
 ## [1.0.2]
 
@@ -22,14 +34,18 @@ will be documented in this file.
 - Add ChangeLog
 - Update documentation
 
-## [1.0.3]
+---
+
+## [1.0.1]
 
 ### Minor Changes
 
-- Add code validation
+- Update documentation
 
-## [1.0.4]
+---
 
-### Minor Changes
+## [1.0.0]
 
-- Add code validation
+### New features
+
+- Initial release
