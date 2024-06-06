@@ -35,4 +35,16 @@ function validateNIF(value) {
     return checkDigit === Number(value[8]);
 }
 
-module.exports = validateNIF;
+function randomNIF()
+{
+    const validationSets = ['1', '2', '3', '5', '6', '8'];
+    const startDigit = validationSets[Math.floor(Math.random() * validationSets.length)];
+    const base = startDigit + Array.from({ length: 7 }, () => Math.floor(Math.random() * 10)).join('');
+
+    let total = base.split('').reduce((sum, digit, idx) => sum + digit * (9 - idx), 0);
+    let checkDigit = total % 11 < 2 ? 0 : 11 - (total % 11);
+
+    return base + checkDigit;
+}
+
+module.exports = { validateNIF, randomNIF };
