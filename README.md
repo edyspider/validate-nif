@@ -12,6 +12,8 @@ npm i @edyspider/validate-nif
 
 ## Usage
 
+### Javascript
+
 ```js
 const { validateNIF, randomNIF } = require('@edyspider/validate-nif');
 
@@ -28,6 +30,28 @@ console.log(`Is generated NIF valid?`, validateNIF(randNIF));
 ```sh
 Is 123456789 a valid NIF? true
 Is 999999999 a valid NIF? false
+Generated random NIF: ?????????
+Is generated NIF valid? true
+```
+
+### Typescript
+
+```ts
+import { validateNIF, randomNIF } from '@edyspider/validate-nif';
+
+const isValidNIF = validateNIF('123456789');
+const isInvalidNIF = validateNIF('999999999');
+const newRandNIF = randomNIF();
+
+console.log('NIF is valid:', isValidNIF);
+console.log('NIF is invalid:', isInvalidNIF);
+console.log('New random NIF:', newRandNIF);
+```
+
+```sh
+Is 123456789 a valid NIF? true
+Is 999999999 a valid NIF? false
+New random NIF: ?????????
 ```
 
 ## Known Issues
@@ -42,3 +66,4 @@ Is 999999999 a valid NIF? false
 
 * **[MIT license](https://github.com/edyspider//validate-nif/blob/master/LICENSE)**
 * Copyright 2024 &copy; [EdySpider](https://github.com/edyspider/)
+
