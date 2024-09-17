@@ -3,6 +3,14 @@
 All notable changes to the **@edyspider/validate-nif** npm package
 will be documented in this file.
 
+## [1.7.8]
+
+### Changes
+
+- Add possibility to use this library in typescript projects
+
+---
+
 ## [1.7.1]
 
 ### Changes

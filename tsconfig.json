@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+      "declaration": true,
+      "outDir": "dist"  // Assuming your compiled JavaScript goes to the "dist" folder
+    }
+  }
